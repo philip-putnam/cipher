@@ -9,8 +9,21 @@ var capFirstLast = function(sentence) {
   var second = sentence.match(/.$/i); // isolates last char at end of input holds in array[0]
   first = first[0];
   second = second[0];
-  var cat = first + second;
+  // Capitalizes
+  var cat = first.toUpperCase() + second.toUpperCase();
   return cat;
 };
 
-alert(capFirstLast(usrInput));
+// Reverses the order of the input of a two letter string
+var reverseOrder = function(string){
+  var start = string[0];
+  var end = string[1];
+  var result = end+start;
+  return result;
+
+};
+
+
+
+
+alert(reverseOrder(capFirstLast(usrInput)));
