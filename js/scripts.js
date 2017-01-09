@@ -23,9 +23,13 @@ var reverseOrder = function(string){
 
 };
 
-var functionRunner = function() {
-  return reverseOrder(capFirstLast(usrInput));
+// function calling other functions and returning the switch cap letters after running both functions.
+var functionRunner = function(string) {
+  var cipher = reverseOrder(capFirstLast(string));
+  string = string + cipher;
+  return string;
+
 };
 
 
-alert(functionRunner());
+alert(functionRunner(usrInput));
