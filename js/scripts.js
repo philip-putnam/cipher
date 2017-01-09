@@ -23,7 +23,9 @@ var reverseOrder = function(string){
 
 };
 
+var functionRunner = function() {
+  return reverseOrder(capFirstLast(usrInput));
+};
 
 
-
-alert(reverseOrder(capFirstLast(usrInput)));
+alert(functionRunner());
