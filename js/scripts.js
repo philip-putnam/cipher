@@ -26,10 +26,19 @@ var reverseOrder = function(string){
 // function calling other functions and returning the switch cap letters after running both functions.
 var functionRunner = function(string) {
   var cipher = reverseOrder(capFirstLast(string));
-  string = string + cipher;
+  var newString = fourthFunction(string);
+  string = newString + cipher;
   return string;
-
 };
 
+// function to add beginning cipher based on middle letter
+var fourthFunction = function(string) {
+  var countHalf = (string.length/2).toFixed();
+  string = string[countHalf] + string;
+  return(string);
+};
+
+
+//alert(functionRunner(usrInput));
 
 alert(functionRunner(usrInput));
