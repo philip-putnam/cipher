@@ -49,8 +49,8 @@ var reverse = function(string) {
 
 
 $(document).ready(function(){
-  $("h1").click(function(){
-    $("h1").text(usrInput);
+  $("h1.special").click(function(){
+    $("h1.special").text(usrInput);
   });
 
   $("h2").click(function(){
