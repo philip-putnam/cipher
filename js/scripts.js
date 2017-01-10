@@ -42,13 +42,19 @@ var fourthFunction = function(string) {
 var reverse = function(string) {
   if (string === "") {
     return "";
-  } else {  
+  } else {
     return reverse(string.substr(1)) + string.charAt(0);
   }
 };
 
-//alert(functionRunner(usrInput));
 
-alert(functionRunner(usrInput));
+$(document).ready(function(){
+  $("h1").click(function(){
+    $("h1").text(usrInput);
+  });
 
-alert(reverse(functionRunner(usrInput)));
+  $("h2").click(function(){
+    $("h2").text(reverse(functionRunner(usrInput)));
+  });
+
+});
