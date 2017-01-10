@@ -38,7 +38,17 @@ var fourthFunction = function(string) {
   return(string);
 };
 
+// recursive function to reverse string characters
+var reverse = function(string) {
+  if (string === "") {
+    return "";
+  } else {  
+    return reverse(string.substr(1)) + string.charAt(0);
+  }
+};
 
 //alert(functionRunner(usrInput));
 
 alert(functionRunner(usrInput));
+
+alert(reverse(functionRunner(usrInput)));
